@@ -24,7 +24,7 @@ function Navbar() {
             <Link className="nav-link" to="/about">About</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/contact">Contact</Link>
+            <Link className="nav-link" to="/contact">Giphy Search</Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/logout">Logout</Link>
@@ -54,7 +54,7 @@ function Navbar() {
           <Link className="nav-link active" aria-current="page" to="/">Home</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/about">About</Link>
+          <Link className="nav-link" to="/about">Giphy Search</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/contact">Contact</Link>
