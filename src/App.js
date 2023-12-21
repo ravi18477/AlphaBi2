@@ -1,7 +1,6 @@
-import React, { createContext, useReducer } from 'react';
+
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
-import { initialState,reducer } from './Reducer/UseReducer';
 import Navbar from './Components/Navbar';
 import{Routes,Route} from 'react-router-dom';
 import Home from './Components/Home';
@@ -12,15 +11,15 @@ import Contact from './Components/Contact';
 import ErrorPage from './Components/ErrorPage';
 import Logout from './Components/Logout';
 
-export const UserContext=createContext();
+
 
 function App() {
 
-  const [state,dispatch]=useReducer(reducer,initialState);
+  
 
   return (
     <div className="container-fluid app">
-      <UserContext.Provider value={{state,dispatch}}>
+    
       <div className="row">
       <Navbar></Navbar>
       </div>
@@ -39,7 +38,7 @@ function App() {
       
       </div>
 
-      </UserContext.Provider>
+      
     </div>
   );
 }

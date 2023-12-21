@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { useState } from 'react';
 import {Link,useNavigate} from 'react-router-dom';
 import {
@@ -8,11 +8,11 @@ import {
 
 import database from './FirebaseConfiguration';
 
-import { UserContext } from '../App'; 
+
 
 function Signin() {
   
-  const {state,dispatch}=useContext(UserContext);
+
 
 
    const navigate=useNavigate();
