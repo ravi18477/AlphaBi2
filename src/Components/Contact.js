@@ -10,34 +10,34 @@ function Contact() {
   const [query,setquery]=useState({});
   
   
-   useEffect(() => {
+  //  useEffect(() => {
     
-    const callContactpage =async ()=>{
-      try{
-            const resp =await fetch('/getdata',{
-              method:'GET',
-              headers:{
+    // const callContactpage =async ()=>{
+  //     try{
+  //           const resp =await fetch('/getdata',{
+  //             method:'GET',
+  //             headers:{
             
-                "Content-Type": "application/json"
-              }
-            })
-            const data = await resp.json();
-            console.log(data);
-            setUserData({...userdata,name:data.name,email:data.email,phone:data.phone});
-            setquery(data);
+  //               "Content-Type": "application/json"
+  //             }
+  //           })
+  //           const data = await resp.json();
+  //           console.log(data);
+  //           setUserData({...userdata,name:data.name,email:data.email,phone:data.phone});
+  //           setquery(data);
   
-            if(!resp.status=== 200){
-               const error = new Error(resp.error);
-               throw error;
-            }
-      }catch(err){
-          console.log(err);
+  //           if(!resp.status=== 200){
+  //              const error = new Error(resp.error);
+  //              throw error;
+  //           }
+  //     }catch(err){
+  //         console.log(err);
         
-      }
-     };
+  //     }
+  //    };
   
-    callContactpage();
-  },[]);
+  //   callContactpage();
+  // },[]);
 
   
   
@@ -49,26 +49,26 @@ function Contact() {
    const handleSubmit= async (e)=>{
      e.preventDefault();
 
-     const {name,email,phone,message}=userdata;
+    //  const {name,email,phone,message}=userdata;
 
-     const res=await fetch('/contact',{
-      method:'POST',
-      headers:{
-        'Content-Type':'application/json'
-      },
-      body:JSON.stringify({
-        name,email,phone,message
-      })
-     });
+    //  const res=await fetch('/contact',{
+    //   method:'POST',
+    //   headers:{
+    //     'Content-Type':'application/json'
+    //   },
+    //   body:JSON.stringify({
+    //     name,email,phone,message
+    //   })
+    //  });
 
-     const data= await res.json();
+    //  const data= await res.json();
 
-     if(!data){
-      alert("message not send");
-     }else{
-      alert("message send");
-      setUserData({...userdata,message:""});
-     }
+    //  if(!data){
+    //   alert("message not send");
+    //  }else{
+    //   alert("message send");
+    //   setUserData({...userdata,message:""});
+    //  }
 
 
    }

@@ -239,3 +239,58 @@
   .error-template {padding: 40px 15px;text-align: center;}
 .error-actions {margin-top:15px;margin-bottom:15px;}
 .error-actions .btn { margin-right:10px; }
+
+
+/* styles.css */
+/* body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+} */
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+.search-box {
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  margin-right: 10px;
+}
+
+.search-button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gif-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.gif-image {
+  width: 100%;
+  margin-bottom: 4px;
+  border-radius: 5px;
+}
